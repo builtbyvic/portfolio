@@ -125,10 +125,39 @@ header {
   transition: all 0.25s ease-out;
 }
 .menu-items li:hover {
+  color: #fff;
   transform: scale(1.1);
   transition: all 0.25s ease-in;
 }
-.menu-items li a:hover {
-  color: #fff;
-  transform: scale(1.1);
+/* footer */
+footer,
+.second-row {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.first-row {
+  display: flex;
+  justify-content: space-evenly;
+}
+.second-row {
+  align-items: center;
+  gap: 0.5rem;
+}
+ul span {
+  font-style: italic;
+  font-weight: bold;
+}
+.icons i {
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+.icons i:hover {
+  color: rgba(255, 255, 255, 1);
+}
+.first-row ul li {
+  color: rgba(255, 255, 255, 0.5);
+}
+.first-row ul li:hover {
+  color: rgba(255, 255, 255, 1);
 }
