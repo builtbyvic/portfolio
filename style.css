@@ -1,0 +1,98 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* general */
+:root {
+  font-family: "Space Mono", monospace;
+}
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+header {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* hamburger menu */
+.menu-btn {
+  align-items: center;
+  block-size: 4rem;
+  cursor: pointer;
+  display: flex;
+  inline-size: 4rem;
+  justify-content: center;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+.menu-btn__burger,
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+  background-color: currentColor;
+  block-size: 0.5rem;
+  inline-size: 2rem;
+  transition: all 0.5s ease-in-out;
+}
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+  content: "";
+  position: absolute;
+}
+.menu-btn__burger::before {
+  transform: translateY(-0.75rem);
+}
+.menu-btn__burger::after {
+  transform: translateY(0.75rem);
+}
+.menu-btn.open .menu-btn__burger {
+  background-color: transparent;
+  transform: translateX(-3rem);
+}
+.menu-btn.open .menu-btn__burger::before {
+  transform: rotate(45deg) translate(2.25rem, -2.25rem);
+}
+.menu-btn.open .menu-btn__burger::after {
+  transform: rotate(-45deg) translate(2.25rem, 2.25rem);
+}
