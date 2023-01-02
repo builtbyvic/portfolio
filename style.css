@@ -61,7 +61,6 @@ header {
   display: flex;
   justify-content: space-around;
 }
-
 /* hamburger menu */
 .menu-btn {
   align-items: center;
@@ -160,4 +159,45 @@ ul span {
 }
 .first-row ul li:hover {
   color: rgba(255, 255, 255, 1);
+}
+/* projects */
+.content-wrapper {
+  /* padding-block-start: 2.5rem; */
+  padding-inline: 5rem;
+}
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin-block-start: 2.5rem;
+}
+.project {
+  background-color: rgba(61, 59, 59, 0.8);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  flex: 1 1 200px;
+  flex-direction: column;
+  font-size: 1.5rem;
+  padding: 5rem;
+  position: relative;
+  text-align: center;
+  transition: all 0.25s ease-out;
+}
+.project:hover {
+  transform: scale(1.1);
+  transition: all 0.25 ease-in;
+}
+.project i {
+  display: flex;
+  inset-block-start: 0.5rem;
+  inset-inline-end: 0.5rem;
+  justify-content: flex-end;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.5s ease-out;
+}
+.project:hover i {
+  opacity: 1;
+  transition: all 0.5s ease-in;
 }
