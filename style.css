@@ -163,7 +163,7 @@ ul span {
 /* projects */
 .content-wrapper {
   /* padding-block-start: 2.5rem; */
-  padding-inline: 5rem;
+  padding-inline: 1rem;
 }
 .projects {
   display: flex;
@@ -176,18 +176,19 @@ ul span {
   border-radius: 0.5rem;
   cursor: pointer;
   display: flex;
-  flex: 1 1 200px;
+  /* flex: 1 1 200px; */
   flex-direction: column;
   font-size: 1.5rem;
-  padding: 5rem;
+  padding-block: 2.5rem;
+  padding-inline: 10rem;
   position: relative;
   text-align: center;
   transition: all 0.25s ease-out;
 }
-.project:hover {
+/* .project:hover {
   transform: scale(1.1);
   transition: all 0.25 ease-in;
-}
+} */
 .project i {
   display: flex;
   inset-block-start: 0.5rem;
@@ -200,4 +201,31 @@ ul span {
 .project:hover i {
   opacity: 1;
   transition: all 0.5s ease-in;
+}
+.image-wrapper {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  filter: grayscale(80%);
+  padding: 1rem;
+  transition: all 0.25s ease-out;
+}
+.image-wrapper:hover {
+  filter: none;
+  transform: scale(1.025);
+  transition: all 0.25 ease-in;
+}
+.project-text {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  inset-block-end: 1rem;
+  inset-inline-start: 1rem;
+  position: absolute;
+}
+.project-text h3 {
+  font-size: 1.5rem;
+}
+.project-text span {
+  color: rgb(107, 107, 114);
+  font-size: 1.25rem;
 }
