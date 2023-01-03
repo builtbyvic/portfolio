@@ -169,17 +169,19 @@ ul span {
   padding-inline: 1rem;
 }
 .projects {
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
   gap: 1.25rem;
+  justify-content: center;
   margin-block-start: 2.5rem;
+  padding-block-end: 2.5rem;
 }
 .project {
   background-color: rgba(61, 59, 59, 0.8);
   border-radius: 0.5rem;
   cursor: pointer;
   display: flex;
-  /* flex: 1 1 200px; */
   flex-direction: column;
   font-size: 1.5rem;
   padding-block: 2.5rem;
