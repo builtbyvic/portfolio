@@ -136,7 +136,10 @@ footer,
   gap: 1rem;
 }
 .first-row {
+  align-items: center;
   display: flex;
+  flex-direction: column;
+  gap: 1rem;
   justify-content: space-evenly;
 }
 .second-row {
