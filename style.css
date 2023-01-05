@@ -335,3 +335,20 @@ footer,
   inline-size: 50px;
   justify-content: flex-end;
 }
+.link-icon__wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+.link-icon__wrapper i {
+  font-size: 1.5rem !important;
+  opacity: 0;
+  transition: all 0.5s ease-out;
+}
+.apps li:hover .link-icon__wrapper i,
+.languages li:hover .link-icon__wrapper i {
+  opacity: 1;
+  transition: all 0.5s ease-in;
+}
+.apps li:hover {
+  background-image: linear-gradient(rgb(17, 17, 17) 0%, rgb(12, 12, 12) 30%);
+}
