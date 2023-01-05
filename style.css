@@ -146,10 +146,10 @@ footer,
   align-items: center;
   gap: 0.5rem;
 }
-ul span {
+/* ul span {
   font-style: italic;
   font-weight: bold;
-}
+} */
 .icons i {
   color: rgba(255, 255, 255, 0.5);
   cursor: pointer;
@@ -297,13 +297,13 @@ ul span {
   display: flex;
   flex: 1 1 300px;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
 }
 .apps li,
 .languages li {
-  border: 2px solid rgba(255, 255, 255, 0.5);
+  background-image: linear-gradient(rgb(17, 17, 17) 0%, rgb(12, 12, 12) 100%);
   border-radius: 0.5rem;
-  /* padding: 3rem; */
+  padding: 1rem;
 }
 .apps li a img,
 .languages li a img {
@@ -319,4 +319,19 @@ ul span {
 .name-wrapper {
   display: flex;
   justify-content: space-between;
+}
+.tag {
+  background-color: rgb(26, 26, 26);
+  border: 1px groove rgba(255, 255, 255, 0.1);
+  border-radius: 1.5rem;
+  padding-block: 0.25rem;
+  padding-inline: 1rem;
+}
+.red-div {
+  background-color: rebeccapurple;
+  block-size: 50px;
+  border-radius: 0.5rem;
+  display: flex;
+  inline-size: 50px;
+  justify-content: flex-end;
 }
