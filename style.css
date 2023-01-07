@@ -352,3 +352,12 @@ footer,
 .apps li:hover {
   background-image: linear-gradient(rgb(17, 17, 17) 0%, rgb(12, 12, 12) 30%);
 }
+/* title */
+.page-title {
+  font-size: 4rem;
+}
+.page-title__small {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 2rem;
+  font-style: bold;
+}
