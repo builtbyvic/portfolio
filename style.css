@@ -359,6 +359,10 @@ footer,
   background-image: linear-gradient(rgb(17, 17, 17) 0%, rgb(12, 12, 12) 30%);
 }
 /* title */
+.timeline-header {
+  border-block-end: 1px groove rgba(255, 255, 255, 0.5);
+  padding-block-end: 1rem;
+}
 .page-title {
   font-size: 4rem;
 }
@@ -366,4 +370,52 @@ footer,
   color: rgba(255, 255, 255, 0.5);
   font-size: 2rem;
   font-style: bold;
+}
+/* timeline */
+.header-image {
+  position: relative;
+}
+.profile-image {
+  display: flex;
+  inline-size: 90%;
+  inset-block-end: -115px;
+  inset-inline-start: 20px;
+  justify-content: space-between;
+  position: absolute;
+}
+.profile-image img {
+  block-size: 10rem;
+  border-radius: 50%;
+  inline-size: 10rem;
+}
+.follow {
+  align-self: center;
+  cursor: pointer;
+  inline-size: 25%;
+}
+.follow a {
+  color: #fff;
+}
+.details {
+  margin-block-start: 150px;
+}
+.names {
+  display: flex;
+  flex-direction: column;
+}
+.names .username {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+.names .handle,
+.location {
+  color: rgba(255, 255, 255, 0.5);
+}
+.titles {
+  display: flex;
+  gap: 0.5rem;
+  margin-block-start: 1rem;
+}
+.location {
+  margin-block-start: 0.25rem;
 }
