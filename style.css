@@ -47,6 +47,7 @@ h6 {
   background-color: rgba(0, 0, 0, 0.9);
   color: rgba(255, 255, 255, 1);
   font-family: "Space Mono", monospace;
+  font-family: "Roboto", monospace;
 }
 a {
   color: currentColor;
@@ -114,7 +115,7 @@ header {
   padding: 1rem 2.5rem 1rem 1rem;
   position: absolute;
   transition: all 0.5s ease-out;
-  letter-spacing: 0.1ch;
+  letter-spacing: 0.2ch;
 }
 .menu-btn.open .menu-items {
   opacity: 1;
@@ -349,7 +350,8 @@ footer,
   opacity: 1;
   transition: all 0.5s ease-in;
 }
-.apps li:hover {
+.apps li:hover,
+.languages li:hover {
   background-image: linear-gradient(rgb(17, 17, 17) 0%, rgb(12, 12, 12) 30%);
 }
 /* title */
