@@ -147,6 +147,10 @@ footer,
   align-items: center;
   gap: 0.5rem;
 }
+.second-row .icons {
+  display: flex;
+  gap: 1rem;
+}
 /* ul span {
   font-style: italic;
   font-weight: bold;
