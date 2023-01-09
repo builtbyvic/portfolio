@@ -419,3 +419,50 @@ footer,
 .location {
   margin-block-start: 0.25rem;
 }
+/* technical */
+.profile {
+  block-size: 10rem;
+  inline-size: 10rem;
+  margin-block-end: 1rem;
+  position: relative;
+}
+.profile img {
+  block-size: 10rem;
+  border-radius: 50%;
+  inline-size: 10rem;
+  object-fit: cover;
+}
+.indicator {
+  align-items: center;
+  block-size: 2rem;
+  border: 1px groove rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  inline-size: 2rem;
+  inset-block-end: 1rem;
+  inset-inline-end: -0.5rem;
+  justify-content: center;
+  padding: 1.25rem;
+  position: absolute;
+}
+.indicator::after {
+  background-color: #333;
+  border-radius: 0.5rem;
+  content: attr(data-text);
+  font-size: 0.75rem;
+  inset-block-start: calc(100% + 0.25rem);
+  opacity: 0;
+  padding-block: 0.25rem;
+  padding-inline: 0.5rem;
+  position: absolute;
+  transition: all 0.25s ease-out;
+  white-space: nowrap;
+}
+.indicator:hover::after {
+  opacity: 1;
+  transition: all 0.25s ease-in;
+}
+.description {
+  margin-block: 1rem;
+}
