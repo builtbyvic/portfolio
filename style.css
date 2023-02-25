@@ -43,11 +43,18 @@ h6 {
 }
 
 /* general */
+@font-face {
+  font-family: "SF";
+  src: url("/fonts/SF-Pro.ttf") format("truetype-variations");
+}
+* {
+  font-family: "SF";
+}
 :root {
   background-color: rgba(0, 0, 0, 0.9);
   color: rgba(255, 255, 255, 1);
-  font-family: "Space Mono", monospace;
-  font-family: "Roboto", monospace;
+  /* font-family: "Space Mono", monospace;
+  font-family: "Roboto", monospace; */
 }
 a {
   color: currentColor;
@@ -61,6 +68,12 @@ header {
   align-items: center;
   display: flex;
   justify-content: space-around;
+}
+main p {
+  font-weight: 200;
+  letter-spacing: 0.05ch;
+  line-height: 1.5;
+  margin-block-end: 1rem;
 }
 /* hamburger menu */
 .menu-btn {
@@ -104,7 +117,7 @@ header {
 }
 /* menu items */
 .menu-items {
-  background-color: #333;
+  background-color: rgba(0, 0, 0, 1);
   border-radius: 0.5rem;
   color: rgba(255, 255, 255, 0.5);
   display: flex;
@@ -116,6 +129,7 @@ header {
   position: absolute;
   transition: all 0.5s ease-out;
   letter-spacing: 0.2ch;
+  z-index: 1;
 }
 .menu-btn.open .menu-items {
   opacity: 1;
@@ -130,6 +144,13 @@ header {
   transition: all 0.25s ease-in;
 }
 /* footer */
+footer {
+  bottom: 1rem;
+  container: row / inline-size;
+  position: fixed;
+  left: 0;
+  right: 0;
+}
 footer,
 .second-row {
   display: flex;
@@ -465,4 +486,15 @@ footer,
 }
 .description {
   margin-block: 1rem;
+}
+@container (min-width: 640px) {
+  .first-row {
+    align-items: flex-start;
+    flex-direction: row;
+  }
+}
+.main-content {
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
